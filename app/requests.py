@@ -9,7 +9,7 @@ source_url = None
 article_url = None
 base_url =None
 base_article_url = None
-"""
+
 def configure_request(app):
     global apiKey,source_url, base_article_url
     apiKey = app.config['NEWS_API_KEY']
@@ -83,4 +83,4 @@ def process_articles_results(articles_list):
             articles_results.append(article_object)
 
     return articles_results
-    """
+    
