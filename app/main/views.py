@@ -43,12 +43,4 @@ def sports():
 
     return render_template('sports.html',title = title, sports = sports)
 
-@main.route('/technology/')
-def technology():
-    
-    technology = get_articles("technology")
-
-    title = 'Technology'
-
-    return render_template('technology.html',title = title, technology = technology)
-    """
+"""
