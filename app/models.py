@@ -1,4 +1,3 @@
-"""
 class Source:
     
     """
@@ -31,4 +30,4 @@ class Article:
         self.urlToImage = urlToImage
         self.publishedAt = publishedAt
         self.content = content
-        """
+        
