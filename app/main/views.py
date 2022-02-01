@@ -1,4 +1,4 @@
-"""
+
 from flask import render_template,request,redirect,url_for
 from ..requests import getSources, get_articles
 from ..models import Source
@@ -43,4 +43,3 @@ def sports():
 
     return render_template('sports.html',title = title, sports = sports)
 
-"""
