@@ -1,5 +1,4 @@
-export NEWS_API_KEY=5071848c130147c291ccbac22a550bdb
+export NEWS_API_KEY=2916d5e6b1384e98b9e5cf5822356016
 export SECRET_KEY=cheaky
-
 
 python3 manage.py server
