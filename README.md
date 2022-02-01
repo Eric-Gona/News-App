@@ -31,4 +31,4 @@ This news application enables users to get all news sources, articles and time t
 - css3
 
 ## License
-MIT License Copyright (c) 2021
+MIT License Copyright (c) 2022
