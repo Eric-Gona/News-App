@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <title>News App</title>
+    <title>News Website</title>
 </head>
 <body>
     <nav>
-        <a href="/" class="logo"><h2>ekNews</h2></a>
+        <a href="/" class="logo"><h2>Galaxy News</h2></a>
         <ul class="menu">
             <li class="nav-items"><a href="/"></a>Home</li>
             <li class="nav-items"><a href="/"></a>News</li>
@@ -20,14 +20,14 @@
 <section id="main">
     <div class="banner"><img src="#"></div>
 
-    <div class="head">TODAYS HEADLINES</div>
+    <div class="head">TODAYS TOP HEADLINES</div>
     {%for title,desc,img,p_date,url in contents %}
     <div class="wrapper">
         <div class="item"><a href="{{url}}"><img src="{{img}}"></a></div>
         <div class="c-box">
             <div class="content"><a href="{{url}}"><h2>{{title}}</h2></a></div>
             <div class="content"><a href="{{url}}"><p>{{desc}}</p></a></div>
-            <div class="content"><p style="color:green;">Publish Date:- </p><p>{{ p_date }}</p></div>
+            <div class="content"><p style="color:rgb(77,255,0);">Publish Date:- </p><p>{{ p_date }}</p></div>
         </div>
     </div>
     {% endfor %}

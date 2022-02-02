@@ -6,6 +6,7 @@ from . import main
 @main.route('/')
 def index():
     
+    newsapi = NewsApiClient (api_key='2916d5e6b1384e98b9e5cf5822356016')
     news = getSources()
 
     title = 'Highlights'
