@@ -13,3 +13,21 @@ def index():
 
     return render_template('index.html',title = title, news = news)
 
+@main.route('/entertainment/')
+def entertainment():
+    
+    entertainment = get_articles("entertainment")
+
+    title = 'Entertainment'
+
+    return render_template('entertainment.html',title = title, entertainment = entertainment)
+
+@main.route('/business/')
+def business():
+    
+    business = get_articles("business")
+
+    title = 'Business'
+
+    return render_template('business.html',title = title, business = business)
+
